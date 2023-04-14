@@ -2,8 +2,8 @@ version: '3.9'
 services:
   api:
     build:
-      context: ./docker/laravel
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: ./docker/laravel/Dockerfile
     ports:
       - 8000:8000
     volumes:
@@ -24,3 +24,16 @@ services:
       MYSQL_DATABASE: product-db
     ports:
       - 3306:3306
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/nodejs/Dockerfile
+    ports:
+      - "3000:8000"
+    command: yarn serve
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ./app:/home/node/app
+    depends_on:
+      - api
