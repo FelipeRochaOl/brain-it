@@ -22,3 +22,5 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 1234
       MYSQL_DATABASE: product-db
+    ports:
+      - 3306:3306
