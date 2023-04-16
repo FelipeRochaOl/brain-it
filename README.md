@@ -1,5 +1,9 @@
 # Test Brain IT PHP - Vue
 
+## Dependencias
+ - Docker
+ - Docker compose
+
 Run to install the project with docker-compose
 
 ```sh
@@ -12,7 +16,7 @@ Run to inicialize the project
 docker-compose up -d
 ```
 
-Vue.js + PHP
+Vue.js + PHP - Regras de negócios:
 
 A ideia é testar os conhecimentos de maneira simples desenvolvendo uma funcionalidade para gerenciar produtos.
 Instruções:
@@ -47,6 +51,10 @@ Tecnologias:
 ● Banco de Dados: MySQL
 
 ● Front: Vue.js (para o css pode utilizar o bootstrap)
+
+> Importante
+>> Na pasta postman temos a collection com as chamadas da API
+
 
 Diferenciais:
 Utilizar docker, utilizar vuex no Vue.js.
