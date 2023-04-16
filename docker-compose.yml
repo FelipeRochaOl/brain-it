@@ -33,6 +33,8 @@ services:
     command: yarn serve
     environment:
       NODE_ENV: development
+    env_file:
+      - ./app/.env
     volumes:
       - ./app:/home/node/app
     depends_on:
