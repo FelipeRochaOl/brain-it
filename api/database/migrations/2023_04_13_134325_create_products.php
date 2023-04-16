@@ -15,6 +15,7 @@ return new class extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name', 150);
+            $table->string('description', 150);
             $table->decimal('price', 11, 2);
             $table->string('category', 100);
             $table->timestamps();
